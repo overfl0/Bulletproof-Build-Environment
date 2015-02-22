@@ -56,7 +56,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Provisioning
   ##########################################################################
   
-  config.vm.provision :shell, :path => "setup_requirements.cmd"
+  config.vm.provision :shell, :path => "SetupScripts/setup_requirements.cmd"
  
   #config.vm.provision "puppet" do |puppet|
   #  puppet.manifests_path = "manifests"
