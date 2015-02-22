@@ -51,5 +51,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Max time to wait until the machine boots and winrm is run (in order to start provisioning)
   config.vm.boot_timeout = 500
+  
+  ##########################################################################
+  # Provisioning
+  ##########################################################################
+  
+  config.vm.provision :shell, :path => "setup_requirements.cmd"
+ 
+  #config.vm.provision "puppet" do |puppet|
+  #  puppet.manifests_path = "manifests"
+  #  puppet.manifest_file = "default.pp"
+  #end
+  
 
 end
