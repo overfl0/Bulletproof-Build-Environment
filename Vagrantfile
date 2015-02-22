@@ -6,7 +6,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Windows Guest Specific
-  config.vm.box = "Windows7"
+  config.vm.box = "Windows7_ie9"
   config.vm.guest = :windows
   config.windows.set_work_network = true
 
