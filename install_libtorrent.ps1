@@ -1,10 +1,11 @@
 $PackageHumanName = "Libtorrent"
+$PackageInstalledCheck = 'C:\Kivy-1.8.0-py2.7-win32\Python27\Lib\site-packages\libtorrent.pyd'  # If path exists, exit the script
+
 $PackageUrl = 'http://heanet.dl.sourceforge.net/project/libtorrent/py-libtorrent/python-libtorrent-1.0.3.win32.msi'
 $PackageDownloadPath = 'c:\vagrant\Downloads'
 $PackageInstallerFileName = 'python-libtorrent-1.0.3.win32.msi'
 $PackageInstaller = Join-Path $PackageDownloadPath $PackageInstallerFileName
-$PackageInstalledCheck = 'C:\Kivy-1.8.0-py2.7-win32\Python27\Lib\site-packages\libtorrent.pyd'
-# 
+
 
 function Is64Bit {  [IntPtr]::Size -eq 8  }
 
