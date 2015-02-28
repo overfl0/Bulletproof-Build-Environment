@@ -70,7 +70,11 @@ winrm set winrm/config/service/auth '@{Basic="true"}'
 
 # Set Windows Remoting service to start "Automatic" and not "Automatic (delayed)"
 cmd /c "sc config winrm start= auto"
-
+Write-Host ""
+Write-Host ""
+Write-Host "*******************************************************************************"
+Write-Host "WinRM setup finished. You can now close this window. Provisioning should start within 30 seconds."
+Write-Host "*******************************************************************************"
 
 # Restarting the computer so provisioning can start through WinRM
 # Write-Host ""
