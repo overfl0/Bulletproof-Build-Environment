@@ -25,6 +25,7 @@ E:\runme.bat
 It's a script that enables WinRM automatically. After that, in about 10 seconds, the provisioning should start in the vagrant window (on the Host side). You can close the windows that will have popped out. They are here just so you can see the errors in case there are any (hopefully not!).
 
 The provisioning scripts should install:
+
 * Kivy (containing Python 2.7)
 * Libtorrent
 * Pyinstaller, futures, pylzma
