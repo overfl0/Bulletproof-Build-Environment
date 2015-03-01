@@ -44,7 +44,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Folder that will contain the script to enable WinRM
     vb.customize ["sharedfolder", "add", :id, "--name", "enable_winrm", "--hostpath", File.dirname(__FILE__) + "/winrm", "--automount"]
 
-    #vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']  # Enable if needed
+    vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']  # Enable if needed
     vb.customize ["modifyvm", :id, "--memory", "1024"] # Set if you want more ram
     #vb.customize ["modifyvm", :id, "--cpus", "2"] # Does not work on some computers so I turned it off
   end
