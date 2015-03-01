@@ -24,5 +24,8 @@ echo Ensuring pyinstaller, futures and pylzma are installed...
 %notifu_call% "Ensuring pyinstaller, futures and pylzma are installed..."
 cmd /c C:\Kivy-1.8.0-py2.7-win32\kivy.bat -m pip install pyinstaller futures "c:\\vagrant\\Downloads\\pylzma-0.4.6-cp27-none-win32.whl"
 
-msg IEUser " All the tools should be installed now."
+copy c:\vagrant\SetupScripts\clone_tacbf_launcher.bat c:\
+
 %notifu_call% "All the tools should be installed and working now" /p " complete!" /d 100000
+msg IEUser " All the tools should be installed now."
+
