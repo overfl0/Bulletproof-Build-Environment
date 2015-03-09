@@ -21,8 +21,8 @@ echo Ensuring Notepad++ is installed...
 %powershell_call% "c:\vagrant\SetupScripts\install_notepadpp.ps1"
 
 echo Ensuring pyinstaller, futures, nose and pylzma are installed...
-%notifu_call% "Ensuring pyinstaller, futures and pylzma are installed..."
-cmd /c C:\Kivy-1.8.0-py2.7-win32\kivy.bat -m pip install pyinstaller futures nose "c:\\vagrant\\Downloads\\pylzma-0.4.6-cp27-none-win32.whl"
+%notifu_call% "Ensuring pyinstaller, futures, nose, mock and pylzma are installed..."
+cmd /c C:\Kivy-1.8.0-py2.7-win32\kivy.bat -m pip install pyinstaller futures nose mock "c:\\vagrant\\Downloads\\pylzma-0.4.6-cp27-none-win32.whl"
 
 copy c:\vagrant\SetupScripts\clone_tacbf_launcher.bat c:\
 

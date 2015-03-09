@@ -28,7 +28,7 @@ The provisioning scripts should install:
 
 * Kivy (containing Python 2.7)
 * Libtorrent
-* Pyinstaller, futures, pylzma
+* Pyinstaller, futures, pylzma, nose, mock
 * Git for Windows
 * Notepad++
 
