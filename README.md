@@ -8,7 +8,7 @@ Get Vagrant 1.6+. Ubuntu 14.04 LTS (and the likes) does NOT have the right versi
 # Howto
 ### Creating the Virtual Machine
 ```sh
-$ git clone https://bitbucket.org/overfl0/installer_win
+$ git clone https://bitbucket.org/tacbf_launcher/build_environment.git
 $ cd installer_win
 $ vagrant box add Windows7_ie9 http://aka.ms/vagrant-win7-ie9 #This will download the microsoft image and will take some time
 $ vagrant up
