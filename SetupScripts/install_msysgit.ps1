@@ -31,7 +31,7 @@ function Package_Install {
     $psi = New-Object System.Diagnostics.ProcessStartInfo
     $psi.WorkingDirectory = "$PackageDownloadPath"
     $psi.FileName = "$PackageInstallerFileName"
-    $psi.Arguments = "/SILENT /COMPONENTS='icons,icons\quicklaunch,icons\desktop,ext,ext\reg,ext\reg\shellhere,ext\reg\guihere,ext\cheetah,assoc,assoc_sh'"
+    $psi.Arguments = "/SILENT /LOADINF=c:\vagrant\Configs\git_install_config.inf"
     #$psi.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Minimized;
 
     Write-Host "Installing `'$PackageInstaller`'"
