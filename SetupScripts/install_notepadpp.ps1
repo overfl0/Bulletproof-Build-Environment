@@ -41,6 +41,9 @@ function Package_Install {
     #   Write-Error ".NET Framework install failed with exit code `'$($s.ExitCode)`'."
     # }
 
+    Write-Host "Copying basic Notepad++ configuration"
+    Copy-Item C:\vagrant\Configs\Notepad++\config.xml C:\Users\IEUser\AppData\Roaming\Notepad++
+
   } else {
     Write-Host "The package `'$PackageHumanName`' is already installed."
   }
