@@ -1,9 +1,9 @@
 $PackageHumanName = "Notepad++"
 $PackageInstalledCheck = 'C:\Program Files\Notepad++\notepad++.exe'  # If path exists, exit the script
 
-$PackageUrl = 'http://download.tuxfamily.org/notepadplus/6.7.4/npp.6.7.4.Installer.exe'
+$PackageUrl = 'https://notepad-plus-plus.org/repository/6.x/6.7.9.2/npp.6.7.9.2.Installer.exe'
 $PackageDownloadPath = 'c:\vagrant\Downloads'
-$PackageInstallerFileName = 'npp.6.7.4.Installer.exe'
+$PackageInstallerFileName = 'npp.6.7.9.2.Installer.exe'
 $PackageInstaller = Join-Path $PackageDownloadPath $PackageInstallerFileName
 
 
