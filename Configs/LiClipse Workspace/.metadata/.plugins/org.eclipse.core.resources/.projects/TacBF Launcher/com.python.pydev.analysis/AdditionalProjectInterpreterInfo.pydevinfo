@@ -1,0 +1,39 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\IEUser\My Documents\LiClipse Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\TacBF Launcher\com.python.pydev.analysis\v2_indexcache
+tests.arma.arma_test|1443993723740017000|C:\tacbf_launcher\tests\arma\arma_test.py
+tests.utils.__init__|1443993723740017000|C:\tacbf_launcher\tests\utils\__init__.py
+tests.__init__|1443993723730003000|C:\tacbf_launcher\tests\__init__.py
+tests.sync.modmanager_test|1443993723740017000|C:\tacbf_launcher\tests\sync\modmanager_test.py
+tests.utils.process_test|1443993723750031000|C:\tacbf_launcher\tests\utils\process_test.py
+tests.arma.__init__|1443993723740017000|C:\tacbf_launcher\tests\arma\__init__.py
+tests.sync.__init__|1443993723740017000|C:\tacbf_launcher\tests\sync\__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+7
+4=ProcessMock
+1=tests.arma.arma_test
+7=ArmaTest
+6=ModManagerTest
+3=tests.sync.modmanager_test
+5=ProcessMock.__init__
+2=tests.utils.process_test
+-- END DICTIONARY
+-- START TREE 1
+4
+arm|1|ArmaTest!9@
+mod|2|ModManagerTest!17@ModManagerTest!25@
+pro|1|ProcessMock!17@
+wor|1|worker_func!18@
+-- END TREE
+-- START TREE 2
+8
+__i|1|__init__!4&18@
+arg|1|args!5&19@
+joi|1|join!4&18@
+set|3|setUp!6&26@setUp!7&10@setUp!6&18@
+sta|1|start!4&18@
+tar|1|target!5&19@
+tea|1|tearDown!7&10@
+tes|8|test_should_return_the_right_syncer_class!6&26@test_sync_zipped_mod!6&26@test_aaa_custom_path_none!7&10@test_custom_path_instances!7&10@test_custom_path!7&10@test_para_should_resolve!6&18@test_modmanager_should_be_createable!6&26@test_para_should_call_res_handler_even_if_already_resolved!6&18@
+-- END TREE

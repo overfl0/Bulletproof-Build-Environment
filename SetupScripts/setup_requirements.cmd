@@ -12,6 +12,10 @@ echo Ensuring libtorrent-python is installed...
 %notifu_call% "Ensuring libtorrent-python is installed..."
 %powershell_call% "c:\vagrant\SetupScripts\install_libtorrent.ps1"
 
+echo Ensuring LiClipse is installed...
+%notifu_call% "Ensuring LiClipse is installed..."
+%powershell_call% "c:\vagrant\SetupScripts\install_liclipse.ps1"
+
 echo Ensuring msysgit is installed...
 %notifu_call% "Ensuring msysgit is installed..."
 %powershell_call% "c:\vagrant\SetupScripts\install_msysgit.ps1"
