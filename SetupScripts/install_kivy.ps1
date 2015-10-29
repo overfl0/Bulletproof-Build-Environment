@@ -42,6 +42,9 @@ function Package_Install {
     $null = New-Item -Path "$PackageInstalledCheck" -ItemType Directory  # Create dir
     Expand-ZIPFile -File "$PackageInstaller" -Destination "$PackageInstalledCheck"
 
+    Write-Host "Copying patched pyinstaller_hooks for PyInstaller 3.0"
+    Copy-Item C:\vagrant\Configs\pyinstaller_hooks\* $PackageInstalledCheck\kivy\kivy\tools\packaging\pyinstaller_hooks
+
     } else {
     Write-Host "The package `'$PackageHumanName`' is already installed."
   }
