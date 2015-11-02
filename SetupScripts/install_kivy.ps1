@@ -45,6 +45,9 @@ function Package_Install {
     Write-Host "Copying patched pyinstaller_hooks for PyInstaller 3.0"
     Copy-Item C:\vagrant\Configs\pyinstaller_hooks\* $PackageInstalledCheck\kivy\kivy\tools\packaging\pyinstaller_hooks
 
+    Write-Host "Copying patched files for unicode userdir"
+    Copy-Item C:\vagrant\Configs\kivy_unicode\* $PackageInstalledCheck\kivy\kivy\
+
     } else {
     Write-Host "The package `'$PackageHumanName`' is already installed."
   }
