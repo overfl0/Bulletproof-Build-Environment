@@ -44,9 +44,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Folder that will contain the script to enable WinRM
     vb.customize ["sharedfolder", "add", :id, "--name", "enable_winrm", "--hostpath", File.dirname(__FILE__) + "/winrm", "--automount"]
 
+    # uncomment the following line to have a folder shared with the vm and host
+    # the name of your host folder must/should be tacbf_launcher_synced
+    #vb.customize ["sharedfolder", "add", :id, "--name", "launcher_shared", "--hostpath", File.dirname(__FILE__) + "/tacbf_launcher_synced", "--automount"]
+
     vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']  # Enable if needed
     vb.customize ["modifyvm", :id, "--memory", "1024"] # Set if you want more ram
     #vb.customize ["modifyvm", :id, "--cpus", "2"] # Does not work on some computers so I turned it off
+    
   end
 
   # Max time to wait until the machine boots and winrm is run (in order to start provisioning)
@@ -57,6 +62,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   ##########################################################################
   
   config.vm.provision :shell, :path => "SetupScripts/setup_requirements.cmd"
+
+  
  
   #config.vm.provision "puppet" do |puppet|
   #  puppet.manifests_path = "manifests"
