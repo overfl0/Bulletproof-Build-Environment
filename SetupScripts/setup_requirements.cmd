@@ -26,7 +26,7 @@ echo Ensuring Notepad++ is installed...
 
 echo Ensuring pyinstaller, futures, nose and pylzma are installed...
 %notifu_call% "Ensuring pyinstaller, futures, nose, mock and pylzma are installed..."
-cmd /c C:\Kivy-1.8.0-py2.7-win32\kivy.bat -m pip install -r https://bitbucket.org/tacbf_launcher/tacbf_launcher/raw/master/requirements.txt
+cmd /c C:\Kivy-1.8.0-py2.7-win32\kivy.bat -m pip install -r c:\Vagrant\Configs\requirements.txt
 
 copy c:\vagrant\SetupScripts\clone_tacbf_launcher.bat c:\
 
