@@ -1,5 +1,5 @@
 $PackageHumanName = "Python-2.7"
-$PackageInstalledCheck = 'C:\Python2.7\python.exe'  # If path exists, exit the script
+$PackageInstalledCheck = 'C:\Python27\python.exe'  # If path exists, exit the script
 
 $PackageUrl = 'https://www.python.org/ftp/python/2.7.11/python-2.7.11.msi'
 $PackageDownloadPath = 'c:\vagrant\Downloads'
