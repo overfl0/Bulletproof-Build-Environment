@@ -4,9 +4,8 @@ set "notifu_call=START /B C:\Notifu\notifu.exe /w /p Provisioning /m"
 echo Ensuring notifu is installed...
 %powershell_call% "c:\vagrant\SetupScripts\install_notifu.ps1"
 
-echo Ensuring Kivy is installed...
-%notifu_call% "Ensuring Kivy is installed..."
-%powershell_call% "c:\vagrant\SetupScripts\install_kivy.ps1"
+echo Ensuring python is installed...
+%powershell_call% "c:\vagrant\SetupScripts\install_python.ps1"
 
 echo Ensuring libtorrent-python is installed...
 %notifu_call% "Ensuring libtorrent-python is installed..."
@@ -25,8 +24,8 @@ echo Ensuring Notepad++ is installed...
 %powershell_call% "c:\vagrant\SetupScripts\install_notepadpp.ps1"
 
 echo Ensuring pyinstaller, futures, nose and pylzma are installed...
-%notifu_call% "Ensuring pyinstaller, futures, nose, mock and pylzma are installed..."
-cmd /c C:\Kivy-1.8.0-py2.7-win32\kivy.bat -m pip install -r c:\Vagrant\Configs\requirements.txt
+%notifu_call% "Ensuring python requirements are installed..."
+cmd /c c:\Python27\python.exe -m pip install --upgrade -r c:\Vagrant\Configs\requirements.txt
 
 copy c:\vagrant\SetupScripts\clone_tacbf_launcher.bat c:\
 
