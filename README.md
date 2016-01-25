@@ -54,6 +54,9 @@ Go to C:\Kivy-1.8.0-py2.7-win32 and run ```kivy.bat```. Navigate to the launcher
 run ```kivy.bat``` and then execute ```build.bat``` from the command line.
 
 ### Other
+##### Fake Steam, Arma, TeamSpeak installation
+To fake Steam, Arma, TeamSpeak installation and set several other internal variables, copy ```devmode_sample.conf``` to ```devmode.conf``` and put it in the same directory as you're running the launcher from. Then, uncomment and/or modify its contents accordingly.
+
 ##### Change VM settings
 You can change some settings (like the amount of ram) by editing the Vagrantfile yourself. Most VM settings will be overridden by vagrant when running the VM (according to the Vagranfile). In order to be sure the changes are persistent, you have to modify that file instead of relying on VirtualBox GUI.
 
