@@ -23,6 +23,9 @@ echo Ensuring Notepad++ is installed...
 %notifu_call% "Ensuring Notepad++ is installed..."
 %powershell_call% "c:\vagrant\SetupScripts\install_notepadpp.ps1"
 
+echo Reloading environment variables for git to work
+call C:\vagrant\SetupScripts\reload_env_variables.bat
+
 echo Ensuring pyinstaller, futures, nose and pylzma are installed...
 %notifu_call% "Ensuring python requirements are installed..."
 cmd /c c:\Python27\python.exe -m pip install --upgrade -r c:\Vagrant\Configs\requirements.txt
@@ -30,5 +33,4 @@ cmd /c c:\Python27\python.exe -m pip install --upgrade -r c:\Vagrant\Configs\req
 copy c:\vagrant\SetupScripts\clone_tacbf_launcher.bat c:\
 
 %notifu_call% "All the tools should be installed and working now" /p " complete!" /d 100000
-msg IEUser " All the tools should be installed now."
-
+msg IEUser " All the tools should be installed now. You may have to reboot your computer."
