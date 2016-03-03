@@ -24,6 +24,9 @@ echo Ensuring Notepad++ is installed...
 %notifu_call% "Ensuring Notepad++ is installed..."
 %powershell_call% "c:\vagrant\SetupScripts\install_notepadpp.ps1"
 
+echo Reloading environment variables for git to work
+call C:\vagrant\SetupScripts\reload_env_variables.bat
+
 echo Ensuring pyinstaller, futures, nose and pylzma are installed...
 %notifu_call% "Ensuring pyinstaller, futures, nose, mock and pylzma are installed..."
 cmd /c C:\Kivy-1.8.0-py2.7-win32\kivy.bat -m pip install -r c:\Vagrant\Configs\requirements.txt
@@ -31,5 +34,4 @@ cmd /c C:\Kivy-1.8.0-py2.7-win32\kivy.bat -m pip install -r c:\Vagrant\Configs\r
 copy c:\vagrant\SetupScripts\clone_tacbf_launcher.bat c:\
 
 %notifu_call% "All the tools should be installed and working now" /p " complete!" /d 100000
-msg IEUser " All the tools should be installed now."
-
+msg IEUser " All the tools should be installed now. You may have to reboot your computer."
