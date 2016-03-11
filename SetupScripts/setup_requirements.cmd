@@ -27,6 +27,9 @@ echo Ensuring Notepad++ is installed...
 echo Reloading environment variables for git to work
 call C:\vagrant\SetupScripts\reload_env_variables.bat
 
+echo Ensuring pip version is high enough...
+cmd /c C:\Kivy-1.8.0-py2.7-win32\kivy.bat -m pip install "pip>=7.0"
+
 echo Ensuring pyinstaller, futures, nose and pylzma are installed...
 %notifu_call% "Ensuring pyinstaller, futures, nose, mock and pylzma are installed..."
 cmd /c C:\Kivy-1.8.0-py2.7-win32\kivy.bat -m pip install -r c:\Vagrant\Configs\requirements.txt
