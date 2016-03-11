@@ -4,3 +4,5 @@ nose
 mock
 psutil
 git+https://github.com/overfl0/mockfs@crude_windows # Mockfs patched to work on windows
+ipython     # For development
+pyreadline  # For development (better ipython integration on windows)
