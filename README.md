@@ -17,6 +17,8 @@ $ vagrant box add Windows7_ie9 http://aka.ms/vagrant-win7-ie9 #This will downloa
 $ vagrant up
 ```
 
+If you get an error while adding the box, see Troubleshooting section below.
+
 ### First boot
 **At first boot you have to enable WinRM for vagrant provisioning.** Unfortunately that windows image has it disabled so you have to do it manually.
 
@@ -83,3 +85,24 @@ vagrant destroy
 vagrant up
 ```
 *Note: The files downloaded by the provisioning scripts are kept intact while destroying the VM. This means they are downloaded only once which speeds up provisioning.*
+
+### Troubleshooting
+
+##### Empty error while adding a vagrant box
+
+If you get the following error while adding a vagrant box:
+```
+C:\build_environment>vagrant box add Windows7_ie9 http://aka.ms/vagrant-win7-ie9
+==> box: Box file was not detected as metadata. Adding it directly...
+==> box: Adding box 'Windows7_ie9' (v0) for provider:
+    box: Downloading: http://aka.ms/vagrant-win7-ie9
+    box:
+An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+
+C:\build_environment>
+```
+
+You need to install [Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://www.microsoft.com/en-us/download/details.aspx?id=8328). It's important that you install the x86 version, not the x86_64!
