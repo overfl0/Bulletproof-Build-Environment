@@ -26,9 +26,11 @@ echo Ensuring Notepad++ is installed...
 echo Reloading environment variables for git to work
 call C:\vagrant\SetupScripts\reload_env_variables.bat
 
-echo Ensuring pyinstaller, futures, nose and pylzma are installed...
+echo Ensuring all python required modules are installed...
 %notifu_call% "Ensuring python requirements are installed..."
 cmd /c c:\Python27\python.exe -m pip install --upgrade -r c:\Vagrant\Configs\requirements.txt
+
+cmd /c C:\vagrant\SetupScripts\patch_python.bat
 
 copy c:\vagrant\SetupScripts\clone_tacbf_launcher.bat c:\
 
