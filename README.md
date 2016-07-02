@@ -50,10 +50,10 @@ Use LiClipse which should already be configured to run the launcher (select defa
 
 
 ##### Manually:
-Go to C:\Kivy-1.8.0-py2.7-win32 and run ```kivy.bat```. Navigate to the launcher repository and run ```python src\launcher.py```
+Navigate to the launcher repository and run ```python src\launcher.py```
 
 ##### Creating tblauncher.exe:
-run ```kivy.bat``` and then execute ```build.bat``` from the command line.
+Execute ```build.bat``` from the command line.
 
 ### Other
 ##### Fake Steam, Arma, TeamSpeak installation

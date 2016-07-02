@@ -1,5 +1,5 @@
 $PackageHumanName = "Libtorrent"
-$PackageInstalledCheck = 'C:\Kivy-1.8.0-py2.7-win32\Python27\Lib\site-packages\libtorrent.pyd'  # If path exists, exit the script
+$PackageInstalledCheck = 'C:\Python27\Lib\site-packages\libtorrent.pyd'  # If path exists, exit the script
 
 $PackageUrl = 'https://github.com/arvidn/libtorrent/releases/download/libtorrent-1_0_9/python-libtorrent-1.0.9.win32.msi'
 $PackageDownloadPath = 'c:\vagrant\Downloads'
@@ -31,7 +31,7 @@ function Package_Install {
     $psi = New-Object System.Diagnostics.ProcessStartInfo
     $psi.WorkingDirectory = "$PackageDownloadPath"
     $psi.FileName = "msiexec.exe"
-    $psi.Arguments = "/quiet /log C:\vagrant\Logs\$PackageHumanName.txt /i $PackageInstallerFileName TARGETDIR=C:\Kivy-1.8.0-py2.7-win32\Python27"
+    $psi.Arguments = "/quiet /log C:\vagrant\Logs\$PackageHumanName.txt /i $PackageInstallerFileName TARGETDIR=C:\Python27"
     #$psi.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Minimized;
 
     Write-Host "Installing `'$PackageInstaller`'"

@@ -1,0 +1,11 @@
+--- __init__-old.py	Sun Jun 26 23:27:32 2016
++++ __init__.py	Tue Jun 28 19:14:02 2016
+@@ -278,7 +278,7 @@
+     if 'KIVY_HOME' in environ:
+         kivy_home_dir = expanduser(environ['KIVY_HOME'])
+     else:
+-        user_home_dir = expanduser('~')
++        user_home_dir = expanduser('~').decode(sys.getfilesystemencoding())
+         if platform == 'android':
+             user_home_dir = environ['ANDROID_APP_PATH']
+         elif platform == 'ios':
