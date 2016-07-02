@@ -8,8 +8,6 @@ $PackageInstallerFilePath = Join-Path $PackageDownloadPath $PackageInstallerFile
 $PackageInstallerArguments = "/quiet /log C:\vagrant\Logs\$PackageHumanName.txt /i $PackageInstallerFileName TARGETDIR=C:\Python27"
 $PackageInstallerExecutable = "msiexec.exe"
 
-function Package_Postinstall_Hook {}
-
 . C:\vagrant\SetupScripts\functions.ps1
 
 Package_Install

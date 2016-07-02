@@ -7,6 +7,7 @@
     install_liclipse.ps1
     install_msysgit.ps1
     install_notepadpp.ps1
+    install_conemu.ps1
 ) do %powershell_call%  "c:\vagrant\SetupScripts\%%s"
 
 @echo Reloading environment variables for git to work

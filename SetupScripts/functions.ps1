@@ -1,3 +1,8 @@
+function Command_Exists($cmdname)
+{
+    return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
+}
+
 function Package_Install {
   Write-Host "***** Ensuring `'$PackageHumanName`' is installed... *****"
 
@@ -13,7 +18,11 @@ function Package_Install {
       Write-Host "Downloading `'$PackageUrl`' to `'$PackageInstallerFilePath`'"
       (New-Object Net.WebClient).DownloadFile("$PackageUrl","$PackageInstallerFilePath")
     } else {
-      Write-Host "NOT downloading `'$PackageHumanName`'  as it already is downloaded in `'$PackageInstallerFilePath`'"
+      Write-Host "NOT downloading `'$PackageHumanName`' as it already is downloaded in `'$PackageInstallerFilePath`'"
+    }
+
+    if (Command_Exists Package_Preinstall_Hook) {
+        Package_Preinstall_Hook
     }
 
     # Run the actual installer
@@ -30,7 +39,9 @@ function Package_Install {
     #   Write-Error ".NET Framework install failed with exit code `'$($s.ExitCode)`'."
     # }
 
-    Package_Postinstall_Hook
+    if (Command_Exists Package_Postinstall_Hook) {
+        Package_Postinstall_Hook
+    }
 
   } else {
     Write-Host "The package `'$PackageHumanName`' is already installed."

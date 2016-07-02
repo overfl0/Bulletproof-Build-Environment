@@ -8,8 +8,6 @@ $PackageInstallerFilePath = Join-Path $PackageDownloadPath $PackageInstallerFile
 $PackageInstallerArguments = "/SILENT /LOADINF=c:\vagrant\Configs\git_install_config.inf"
 $PackageInstallerExecutable = "$PackageInstallerFileName"
 
-function Package_Postinstall_Hook {}
-
 . C:\vagrant\SetupScripts\functions.ps1
 
 Package_Install
