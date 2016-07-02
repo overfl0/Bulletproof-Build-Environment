@@ -10,6 +10,7 @@ $PackageInstaller = Join-Path $PackageDownloadPath $PackageInstallerFileName
 function Is64Bit {  [IntPtr]::Size -eq 8  }
 
 function Package_Install {
+  Write-Host "Ensuring `'$PackageHumanName`' is installed..."
   # if(Is64Bit) {$fx="framework64"} else {$fx="framework"}
 
   if(!(test-path "$PackageInstalledCheck")) {
