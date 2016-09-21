@@ -16,6 +16,6 @@ call C:\vagrant\SetupScripts\reload_env_variables.bat
 @echo Ensuring all python required modules are installed...
 cmd /c c:\Python27\python.exe -m pip install --upgrade -r c:\Vagrant\Configs\requirements.txt
 cmd /c C:\vagrant\SetupScripts\patch_python.bat
-copy c:\vagrant\SetupScripts\clone_tacbf_launcher.bat c:\
+copy c:\vagrant\SetupScripts\clone_bulletproof.bat c:\
 
 msg IEUser " All the tools should be installed now. You may have to reboot your computer."

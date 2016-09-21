@@ -1,5 +1,5 @@
 # About
-This is the Vagrant environment that creates a windows virtual machine that can be used to work on the [Tactical Battlefield](http://www.tacbf.com/) mod launcher and downloader.
+This is the Vagrant environment that creates a windows virtual machine that can be used to work on the [Bulletproof Arma Launcher](https://github.com/overfl0/Bulletproof-Arma-Launcher).
 This repository will be updated should new dependencies be added to the launcher source code.
 
 # Prerequisites
@@ -11,8 +11,8 @@ If after running *vagrant up* you get errors about WinRM, **your vagrant install
 # Howto
 ### Creating the Virtual Machine
 ```sh
-$ git clone https://bitbucket.org/tacbf_launcher/build_environment.git
-$ cd build_environment
+$ git clone https://github.com/overfl0/Bulletproof-Build-Environment.git
+$ cd Bulletproof-Build-Environment
 $ vagrant box add Windows7_ie9 http://aka.ms/vagrant-win7-ie9 #This will download the microsoft image and will take some time
 $ vagrant up
 ```
@@ -52,8 +52,8 @@ Use LiClipse which should already be configured to run the launcher (select defa
 ##### Manually:
 Navigate to the launcher repository and run ```python src\launcher.py```
 
-##### Creating tblauncher.exe:
-Execute ```build.bat``` from the command line.
+##### Creating the launcher executable:
+Execute ```build.py``` from the command line.
 
 ### Other
 ##### Fake Steam, Arma, TeamSpeak installation
