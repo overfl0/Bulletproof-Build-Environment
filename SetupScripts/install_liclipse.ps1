@@ -1,9 +1,9 @@
 $PackageHumanName = "LiClipse"
-$PackageInstalledCheck = 'C:\Program Files\Brainwy\LiClipse 3.0.3\LiClipse.exe'  # If path exists, exit the script
+$PackageInstalledCheck = 'C:\Program Files\Brainwy\liclipse_3.1.0\LiClipse.exe'  # If path exists, exit the script
 
-$PackageUrl = 'https://googledrive.com/host/0BwwQN8QrgsRpLVlDeHRNemw3S1E/LiClipse%203.0.3/liclipse_3.0.3_win32.x86.exe'
+$PackageUrl = 'http://update.liclipse.com/standalone/liclipse_3.1.0_win32.x86.exe'
 $PackageDownloadPath = 'c:\vagrant\Downloads'
-$PackageInstallerFileName = 'liclipse_3.0.3_win32.x86.exe'
+$PackageInstallerFileName = 'liclipse_3.1.0_win32.x86.exe'
 $PackageInstallerFilePath = Join-Path $PackageDownloadPath $PackageInstallerFileName
 $PackageInstallerArguments = "/SILENT /LOG C:\vagrant\Logs\$PackageHumanName.txt"
 $PackageInstallerExecutable = "$PackageInstallerFileName"

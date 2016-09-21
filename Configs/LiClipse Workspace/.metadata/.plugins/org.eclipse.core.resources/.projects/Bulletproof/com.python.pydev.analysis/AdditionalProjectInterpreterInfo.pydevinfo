@@ -1,0 +1,70 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\IEUser\My Documents\LiClipse Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Bulletproof\com.python.pydev.analysis\v2_indexcache
+tests.sync.integrity_test|1474470247147005000|C:\Bulletproof\tests\sync\integrity_test.py
+tests.arma.arma_test|1474470247138172000|C:\Bulletproof\tests\arma\arma_test.py
+tests.utils.__init__|1474470247147005000|C:\Bulletproof\tests\utils\__init__.py
+tests.utils.event_bridge_test|1474470247147005000|C:\Bulletproof\tests\utils\event_bridge_test.py
+tests.__init__|1474470247138172000|C:\Bulletproof\tests\__init__.py
+tests.sync.modmanager_test|1474470247147005000|C:\Bulletproof\tests\sync\modmanager_test.py
+tests.utils.data.__init__|1474470247147005000|C:\Bulletproof\tests\utils\data\__init__.py
+tests.utils.process_test|1474470247147005000|C:\Bulletproof\tests\utils\process_test.py
+tests.arma.__init__|1474470247138172000|C:\Bulletproof\tests\arma\__init__.py
+tests.sync.__init__|1474470247147005000|C:\Bulletproof\tests\sync\__init__.py
+tests.utils.data.model_test|1474470247147005000|C:\Bulletproof\tests\utils\data\model_test.py
+-- END DISKCACHE
+-- START DICTIONARY
+18
+15=ModelTest
+2=tests.arma.arma_test
+8=ExampleModel
+14=EventBridgeTest
+17=ArmaTest
+13=AppMock.__init__
+1=tests.sync.modmanager_test
+7=AppMock
+4=tests.utils.process_test
+11=ParaTest.setUp
+10=IntegrityTest.setUp
+3=tests.sync.integrity_test
+12=EventBridgeTest.setUp
+9=IntegrityTest
+18=ParaTest
+5=tests.utils.event_bridge_test
+16=ModManagerTest
+6=tests.utils.data.model_test
+-- END DICTIONARY
+-- START TREE 1
+13
+app|1|AppMock!9@
+arm|1|ArmaTest!17@
+bas|1|BASE_DIR!27@
+blo|1|blocking_after_resolving!34@
+dir|1|DIRECTORY!27@
+eve|1|EventBridgeTest!41@
+exa|1|ExampleModel!49@
+int|1|IntegrityTest!25@
+mod|2|ModelTest!49@ModManagerTest!9@
+par|1|ParaTest!33@
+ter|1|termination_func!34@
+top|1|TOP_DIR!27@
+wor|2|worker_func!42@worker_func!34@
+-- END TREE
+-- START TREE 2
+15
+__i|2|__init__!7&10@__init__!8&50@
+_ad|3|_add_torrent_file_only!9&26@_add_file!9&26@_add_real_file_only!9&26@
+_ch|1|_check_if_dir_contains_only!9&26@
+_ge|1|_get_launcher_moddir!8&50@
+_se|4|_set_mod_data_cache!8&50@_set_basic_subdir_files!9&26@_set_basic_files!9&26@_set_launcher_basedir!8&50@
+_te|1|_test_sync_missing_dir!9&26@
+fie|1|fields!8&51@
+fil|1|file_paths!10&27@
+fs|1|fs!10&27@
+get|1|get_running_app!7&10@
+old|4|old_main!11&35@old_main!12&43@old_main_file!11&35@old_main_file!12&43@
+phy|2|physical_files_expected!10&27@physical_dirs_expected!10&27@
+set|7|settings!13&11@setUp!14&42@setUp!15&50@setUp!16&10@setUp!17&18@setUp!9&26@setUp!18&34@
+tea|5|tearDown!9&26@tearDown!14&42@tearDown!15&50@tearDown!18&34@tearDown!17&18@
+tes|26|test_models_set_method_is_returning_model_itself!15&50@test_aaa_custom_path_none!17&18@test_sync_superfluous_dir_on_warn!9&26@test_sync_superfluous_file_on_warn!9&26@test_sync_keep_whitelisted_physical_entries!9&26@test_model_should_fire_change_event!15&50@test_para_should_resolve!18&34@test_sync_missing_file!9&26@test_para_should_call_res_handler_even_if_already_resolved!18&34@test_sync_entries_in_other_top_dirs!9&26@test_sync_missing_unicode_file!9&26@test_para_termination!18&34@test_custom_path_instances!17&18@test_model_should_call_interceptors!15&50@test_para_should_not_block!18&34@test_custom_path!17&18@test_sync_subdir!9&26@test_sync_superfluous_entries_so_remove!9&26@test_modmanager_should_be_createable!16&10@test_sync_keep_whitelisted_physical_entries_on_warn!9&26@test_sync_whitelisted_entries_from_torrent_removed!9&26@test_sync_superfluous_entries_but_ignore!9&26@test_sync_subdir_missing!9&26@test_connection_can_hold_more_than_one_msg!14&42@test_sync_already_synced!9&26@test_sync_unicode!9&26@
+-- END TREE
