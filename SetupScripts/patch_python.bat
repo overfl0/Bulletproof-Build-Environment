@@ -1,4 +1,8 @@
-set patch="C:\Program Files\Git\bin\patch.exe"
+if "%APPVEYOR%" == "True" (
+    set patch="C:\Program Files\Git\usr\bin\patch.exe"
+) else (
+    set patch="C:\Program Files\Git\bin\patch.exe"
+)
 set patches_dir=c:\vagrant\Patches
 set python_dir=C:\Python27\Lib\site-packages
 
