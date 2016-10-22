@@ -1,5 +1,5 @@
 $PackageHumanName = "LiClipse"
-$PackageInstalledCheck = 'C:\Program Files\Brainwy\liclipse_3.1.0\LiClipse.exe'  # If path exists, exit the script
+$PackageInstalledCheck = 'C:\Program Files\Brainwy\LiClipse 3.1.0\LiClipse.exe'  # If path exists, exit the script
 
 $PackageUrl = 'http://update.liclipse.com/standalone/liclipse_3.1.0_win32.x86.exe'
 $PackageDownloadPath = 'c:\vagrant\Downloads'
