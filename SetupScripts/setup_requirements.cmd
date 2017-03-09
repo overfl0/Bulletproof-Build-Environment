@@ -37,4 +37,4 @@ set USE_GSTREAMER=0
 @rem cmd /c C:\vagrant\SetupScripts\patch_python.bat
 copy c:\vagrant\SetupScripts\clone_bulletproof.bat c:\
 
-msg IEUser " All the tools should be installed now. You may have to reboot your computer."
+msg IEUser "All the tools should be installed now. Look at the vagrant window and MAKE SURE THERE WAS NO ERROR IN THE PROCESS!!! You may have to reboot your computer."

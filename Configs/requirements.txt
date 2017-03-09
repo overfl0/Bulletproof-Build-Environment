@@ -5,7 +5,7 @@ futures
 nose
 mock
 psutil
-git+https://github.com/overfl0/mockfs@crude_windows # Mockfs patched to work on windows
+git+https://github.com/overfl0/mockfs@windows_nosphinx # Mockfs patched to work on windows
 
 # Kivy requirements
 # Removed for now because we're building Kivy from source
