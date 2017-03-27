@@ -5,5 +5,6 @@ set "psCommand=powershell -Command "$pword = read-host 'Enter Password' -AsSecur
 for /f "usebackq delims=" %%p in (`%psCommand%`) do set password=%%p
 
 @rem Get signtool at: https://www.microsoft.com/en-us/download/details.aspx?id=8279
-signtool.exe sign /f Signature.p12 /p %password% /t http://time.certum.pl Frontline.exe 
-signtool.exe sign /f Signature.p12 /p %password% /t http://time.certum.pl TB_Launcher.exe 
+signtool.exe sign /f Signature.p12 /p %password% /t http://time.certum.pl Frontline.exe
+timeout 2
+signtool.exe sign /f Signature.p12 /p %password% /t http://time.certum.pl TB_Launcher.exe
