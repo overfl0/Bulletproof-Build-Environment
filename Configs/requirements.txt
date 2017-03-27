@@ -5,6 +5,7 @@ futures
 nose
 mock
 psutil
+python-valve==0.1.1
 git+https://github.com/overfl0/mockfs@windows_nosphinx # Mockfs patched to work on windows
 
 # Kivy requirements
