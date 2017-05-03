@@ -30,8 +30,8 @@ set USE_GSTREAMER=0
 @rem End of requirements for compiling Kivy 1.9.2
 
 
-@rem Compiling own Kivy 1.9.2 (from 2017-01-20)
-%pip% install git+git://github.com/kivy/kivy@05a109ca31f39c89f0305f4997a65354e58f7a96
+@rem Compiling own Kivy 1.9.2 (from 2017-05-03 with own patches)
+%pip% install git+git://github.com/overfl0/kivy@1c039664cffa2b0974a75dddc6e3ea51273faa66
 
 %pip% install --upgrade -r c:\Vagrant\Configs\requirements.txt
 @rem cmd /c C:\vagrant\SetupScripts\patch_python.bat
